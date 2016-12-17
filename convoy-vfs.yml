@@ -1,0 +1,11 @@
+convoy-vfs:
+  image: r3dl4nce/rancheros-convoy-vfs
+  restart: always
+  labels:
+    - io.rancher.os.scope=system
+    - io.rancher.os.before=docker
+  volumes_from:
+    - all-volumes
+
+
+
